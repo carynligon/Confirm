@@ -17,8 +17,9 @@ const Modal = React.createClass({
     background: 'white',
     width: '75%',
     margin: '0 auto',
-    height: '75vh',
-    marginTop: '12.5%'
+    height: '60vh',
+    marginTop: '12.5%',
+    overflow: 'scroll'
   },
   render: function() {
     return (

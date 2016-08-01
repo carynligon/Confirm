@@ -8,3 +8,16 @@ header {
     color: $primary-blue
   }
 }
+
+nav {
+  padding: 10px;
+  background: $primary-blue;
+  color: $white;
+  li {
+    &:hover {
+      color: $black;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.modal-content {
+  padding: 15px;
+  box-sizing: border-box;
+  h2 {
+    border-bottom: 1px solid $gray;
+    color: $primary-blue;
+  }
+}
+
+#close-modal {
+  float: right;
+  background: none;
+  color: $primary-blue;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  &:hover {
+    background: $primary-blue;
+    color: $white;
+    cursor: pointer;
+  }
+}

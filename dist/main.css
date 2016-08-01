@@ -13,7 +13,8 @@
     box-sizing: border-box;
     border: 0;
     border-bottom: 1px solid #dbdbdb;
-    color: #6db7ff;
+    color: #393939;
+    font-weight: 600;
     padding-left: 5px; }
     .login-form input::-webkit-input-placeholder {
       color: #6db7ff; }
@@ -21,14 +22,17 @@
       border-color: #6db7ff; }
   .login-form input[type="submit"] {
     border: 3px solid #6db7ff;
+    color: #6db7ff;
     border-radius: 20px;
     padding: 10px 0;
+    margin-top: 15px;
     background: none;
     font-size: 2rem; }
     .login-form input[type="submit"]:hover {
       background: #393939;
       color: #fff;
-      border-color: #393939; }
+      border-color: #393939;
+      cursor: pointer; }
   .login-form a {
     padding-right: 5px;
     color: #6db7ff; }
@@ -47,6 +51,47 @@ header {
     line-height: 12rem;
     color: #6db7ff; }
 
+nav {
+  padding: 10px;
+  background: #6db7ff;
+  color: #fff; }
+  nav li:hover {
+    color: #393939;
+    font-weight: 600;
+    cursor: pointer; }
+
+#to-read {
+  width: 100%;
+  border-top: 1px solid #dbdbdb; }
+  #to-read ul {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center; }
+    #to-read ul li {
+      line-height: 2rem; }
+      #to-read ul li:hover {
+        border-bottom: 1px solid #6db7ff; }
+
+.modal-content {
+  padding: 15px;
+  box-sizing: border-box; }
+  .modal-content h2 {
+    border-bottom: 1px solid #dbdbdb;
+    color: #6db7ff; }
+
+#close-modal {
+  float: right;
+  background: none;
+  color: #6db7ff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none; }
+  #close-modal:hover {
+    background: #6db7ff;
+    color: #fff;
+    cursor: pointer; }
+
 body {
   margin: 0;
   color: #393939;
@@ -59,7 +104,8 @@ a {
   text-decoration: none; }
 
 ul {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 li {
   list-style-type: none; }

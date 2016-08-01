@@ -1,0 +1,16 @@
+#to-read {
+  width: 100%;
+  border-top: 1px solid $gray;
+  ul {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    li {
+      line-height: 2rem;
+      &:hover {
+        border-bottom: 1px solid $primary-blue;
+      }
+    }
+  }
+}

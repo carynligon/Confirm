@@ -22,36 +22,23 @@ const DocumentList = React.createClass({
     let documentArr = this.state.documents.map((doc, i) => {
       if (doc.read === false) {
         styles = {
-          color: 'red'
+          color: '#393939'
         }
       } else {
         styles = {
-          color: 'black'
+          color: '#dbdbdb'
         }
       }
       return <li key={i}><Link to={`/${doc._id}`} style={styles}>{doc.title}</Link></li>;
     });
     return(
-      <aside>
+      <div id="to-read">
         <ul id="document-ul">
           {documentArr}
         </ul>
-      </aside>
+      </div>
     );
   }
 });
 
 export default DocumentList;
-
-// To create more docs:
-// store.documentsCollection.create({
-//   title: 'Pet Agreement',
-//   body: `Cardigan seitan mixtape organic. Squid hoodie meh man bun. Messenger bag quinoa drinking vinegar banjo, helvetica XOXO tacos trust fund literally. Art party 90's shoreditch kogi, try-hard normcore fingerstache. Blog crucifix readymade migas lo-fi, austin vegan paleo artisan hoodie. Pork belly before they sold out chia retro selvage church-key, umami organic gochujang. Microdosing brunch shabby chic, chia cardigan wolf cliche celiac fap leggings.`
-// }, {
-//   success: function(response) {
-//     console.log(response);
-//   },
-//   error: function(response) {
-//     console.log('error: ' + response);
-//   }
-// });
