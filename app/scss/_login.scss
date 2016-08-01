@@ -1,0 +1,49 @@
+.login-form {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  input {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 2.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 1px solid $gray;
+    color: $primary-blue;
+    padding-left: 5px;
+    &::-webkit-input-placeholder {
+      color: $primary-blue;
+    }
+    &:hover {
+      border-color: $primary-blue;
+    }
+  }
+  input[type="submit"] {
+    border: 3px solid $primary-blue;
+    border-radius: 20px;
+    padding: 10px 0;
+    background: none;
+    font-size: 2rem;
+    &:hover {
+      background: $black;
+      color: $white;
+      border-color: $black;
+    }
+  }
+  a {
+    padding-right: 5px;
+    color: $primary-blue;
+    &:hover {
+      color: $black;
+    }
+  }
+  p {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}

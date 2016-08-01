@@ -1,0 +1,10 @@
+header {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  .logo {
+    font-size: 5rem;
+    line-height: 12rem;
+    color: $primary-blue
+  }
+}
