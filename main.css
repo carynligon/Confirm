@@ -92,6 +92,25 @@ nav {
     color: #fff;
     cursor: pointer; }
 
+.confirm-content {
+  text-align: center; }
+  .confirm-content p {
+    margin-top: 30%; }
+  .confirm-content input {
+    width: 75px;
+    background: #6db7ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 5px 0 7px 0; }
+    .confirm-content input:hover {
+      background: none;
+      color: #6db7ff; }
+  .confirm-content #confirm-no {
+    font-weight: 200; }
+
 body {
   margin: 0;
   color: #393939;
