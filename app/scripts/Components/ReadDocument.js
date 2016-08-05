@@ -1,25 +1,29 @@
 import React from 'react';
+import {hashHistory} from 'react-router';
 
 import store from '../store';
 
+import ConfirmModal from './Confirm';
 import Modal from './Modal';
 
 const ReadDocument = React.createClass({
   handleCheck: function(e) {
     let doc = store.documentsCollection.get(this.props.params.id);
-    console.log(doc);
-    doc.save('read', true);
-    document.getElementById('checkbox').disabled = 'true';
+    hashHistory.push(`/${this.props.params.id}/confirm`);
   },
   getInitialState: function() {
     return {
       doc: store.documentsCollection.get(this.props.params.id).toJSON()
     };
   },
+  listener: function() {
+    this.setState({doc: store.documentsCollection.get(this.props.params.id).toJSON()});
+  },
   componentDidMount: function() {
-    store.documentsCollection.on('add change update', () => {
-      this.setState({doc: store.documentsCollection.get(this.props.params.id).toJSON()});
-    });
+    store.documentsCollection.on('add change update', this.listener);
+  },
+  componentWillUnmount: function() {
+    store.documentsCollection.off('add change update', this.listener);
   },
   componentWillReceiveProps: function(nextProps) {
     if (nextProps.params.id !== this.props.params.id) {
@@ -43,6 +47,7 @@ const ReadDocument = React.createClass({
           <p>{this.state.doc.body}</p>
           <input type="checkbox" id="checkbox" onClick={this.handleCheck} checked={checkStatus} disabled={disabled}/><span>Read</span>
         </section>
+        {this.props.children}
       </Modal>
     );
   }

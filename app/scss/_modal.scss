@@ -20,3 +20,27 @@
     cursor: pointer;
   }
 }
+
+.confirm-content {
+  text-align: center;
+  p {
+    margin-top: 30%;
+  }
+  input {
+    width: 75px;
+    background: $primary-blue;
+    color: $white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 5px 0 7px 0;
+    &:hover {
+      background: none;
+      color: $primary-blue;
+    }
+  }
+  #confirm-no {
+    font-weight: 200;
+  }
+}

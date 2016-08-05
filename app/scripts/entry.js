@@ -25,10 +25,10 @@ if (!localStorage.getItem('authtoken')) {
 ReactDOM.render(router, document.getElementById('container'));
 
 
-// // To create more docs:
+// To create more docs:
 // store.documentsCollection.create({
-//   title: 'Lease Inventory',
-//   body: `Slow-carb semiotics kitsch, tousled letterpress umami fanny pack beard schlitz polaroid narwhal fingerstache meggings keytar. Letterpress gochujang dreamcatcher, mumblecore photo booth mixtape lo-fi church-key helvetica authentic bushwick tote bag godard. Banjo mumblecore ugh bicycle rights sartorial, jean shorts pour-over listicle. Authentic gentrify gluten-free, lo-fi ugh small batch +1 typewriter literally shabby chic mustache tilde. Sartorial selvage neutra PBR&B, heirloom seitan viral ramps iPhone vinyl mixtape listicle meh wayfarers. Crucifix photo booth williamsburg fingerstache tilde roof party wayfarers small batch street art pop-up blog, DIY fanny pack. Meggings meditation intelligentsia kale chips ramps cray knausgaard sartorial, actually gochujang try-hard.`
+//   title: 'Pet Agreement',
+//   body: `"Cardigan seitan mixtape organic. Squid hoodie meh man bun. Messenger bag quinoa drinking vinegar banjo, helvetica XOXO tacos trust fund literally. Art party 90's shoreditch kogi, try-hard normcore fingerstache. Blog crucifix readymade migas lo-fi, austin vegan paleo artisan hoodie. Pork belly before they sold out chia retro selvage church-key, umami organic gochujang. Microdosing brunch shabby chic, chia cardigan wolf cliche celiac fap leggings."`
 // }, {
 //   success: function(response) {
 //     console.log(response);

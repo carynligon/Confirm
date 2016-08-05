@@ -7,15 +7,20 @@ import store from '../store';
 const DocumentList = React.createClass({
   getInitialState: function() {
     return {
-      documents: []
+      documents: store.documentsCollection.toJSON()
     };
   },
-  componentDidMount: function() {
-    store.documentsCollection.fetch({
-      success: (response) => {
-        this.setState({documents: response.toJSON()});
-      }
+  listener: function() {
+    this.setState({
+      documents: store.documentsCollection.toJSON()
     });
+  },
+  componentDidMount: function() {
+    store.documentsCollection.on('change add', this.listener);
+    store.documentsCollection.fetch();
+  },
+  componentWillUnmount: function() {
+    store.documentsCollection.off('change add', this.listener);
   },
   render: function() {
     let styles;
