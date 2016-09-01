@@ -7,4 +7,4 @@
 
 This app uses Kinvey as the BAAS.
 
-[View live site here](https://carynligon.github.io/confirm-app/)
+[View live site here](https://carynligon.github.io/Confirm/)
